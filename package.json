@@ -7,8 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "places.js": "^1.19.0",
+    "vue": "^3.0.0",
+    "vue-places": "^2.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
