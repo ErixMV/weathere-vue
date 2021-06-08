@@ -151,10 +151,13 @@ export default {
     },
     async getForecast({ lat, lng }) {
       try {
-        const { data } = await axios.post("http://localhost:5000/rest/forecast", {
-          lat,
-          lng,
-        });
+        const { data } = await axios.post(
+          "https://coders-thoth.herokuapp.com/rest/forecast",
+          {
+            lat,
+            lng,
+          }
+        );
         this.forecast = data.data;
       } catch (err) {
         console.log(err.message);
